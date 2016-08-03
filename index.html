@@ -1,13 +1,97 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Music History</title>
-</head>
+  <head>
+    <title># Music History</title>
+    <link rel="stylesheet" type="text/css" href="music.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="sp1">View Music</li>
+        <li class="sp2"><a href="#">Add Music</a></li>
+        <li class="sp3"><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="filters flex_1">
+        <div class="slider">
+          <label for="time-slider">Song length:</label><br />
+          <input type="range" id="time-slider" class="bold" min="10" max="100">
+        </div>
 
-<body>
+        <div class="artist_dropdown">
+          <label for="artist">Artist:</label><br />
+          <select name="artist" class="bold">
+            <option value="" disabled selected>Options</option>
+            <option value="Bob_Marley">Bob Marley          .</option>
+            <option value="Emineum">Emineum</option>
+            <option value="Fat_Joe">Fat Joe</option>
+            <option value="JohnLegend">John Legend</option>
+            <option value="Cold_play">Cold play</option>
+          </select>
+        </div><br />
 
+        <div class="album_dropdown">
+          <label for="album">Album:</label><br />
+          <select name="album" class="bold">
+            <option value="" disabled selected>Options</option>
+            <option value="ffff">fffffffffffffffffffff      </option>
+            <option value="eee">eee</option>
+            <option value="ddd">ddd</option>
+            <option value="ccc">ccc</option>
+            <option value="bbb">bbb</option>
+          </select>
+        </div><br />
 
-</body>
+        <div class="genres">
+          <span class="legend">Genre:</span>
+          <div class="checkbox_left">
+            <li><input type="checkbox" name="genre" value="rock" />Rock</li>
+            <li><input type="checkbox" name="genre" value="classical" />Reggae</li>
+            <li><input type="checkbox" name="genre" value="pop" />Pop</li>
+        </div>
+        <div class="checkbox_right">
+            <li><input type="checkbox" name="genre" value="jazz" />Jazz</li>
+            <li><input type="checkbox" name="genre" value="blues" />Blues</li>
+            <li><input type="checkbox" name="genre" value="hip_hop" />Hip hop</li>
+          </div>
+        </div>
+
+        <div class="filter_button">
+          <button type="submit" class="bold">Filter</button>
+        </div>
+      </div>
+
+      <div class="song_list flex_2">
+        <div class="allNames">
+           <div class="eachNames">
+            <h2>Song Name</h2>
+             <span class="sp1">Artist name</span>
+             <span class="sp1">Album name</span>
+             <span>Genre</span>
+           </div>
+           <div class="eachNames">
+             <h2>Song Name</h2>
+             <span class="sp1">Artist name</span>
+             <span class="sp1">Album name</span>
+             <span>Genre</span>
+           </div>
+           <div class="eachNames">
+             <h2>Song Name</h2>
+             <span class="sp1">Artist name</span>
+             <span class="sp1">Album name</span>
+             <span>Genre</span>
+           </div>
+           <div class="eachNames">
+             <h2>Song Name</h2>
+             <span class="sp1">Artist name</span>
+             <span class="sp1">Album name</span>
+             <span>Genre</span>
+           </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
 </html>

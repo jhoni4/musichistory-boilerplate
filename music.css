@@ -1,0 +1,127 @@
+/*//////////
+universal
+///////////*/
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/*//////////
+flexible containers
+///////////*/
+
+.container {
+  display: flex;
+}
+
+.flex_1 {
+  flex-grow: 1;
+}
+
+.flex_2 {
+  flex-grow: 4;
+}
+
+
+/*//////////
+nav-bar
+///////////*/
+
+nav {
+  background-color: #FFB4B0;
+  border: 2px solid black;
+  margin: 2% 10%;
+}
+
+nav ul {
+  padding-left: 20px;
+}
+
+nav li {
+  display: inline-block;
+  border-right: 2px solid black;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+.sp3 {
+  text-decoration: underline;
+  border: none;
+}
+
+/*//////////
+tools filter
+///////////*/
+
+.filters {
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  padding: 1%;
+  margin-left: 10%;
+  margin-right: 25px;
+}
+
+.checkbox_left {
+  float: left;
+}
+
+.checkbox_right {
+  float: right;
+}
+
+.slider input {
+  width: 100%;
+}
+.genres {
+  list-style-type: none;
+  display: flex;
+}
+
+.filter_button {
+  margin-top: 15px;
+  text-align: center;
+}
+.bold {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.filter_button button {
+  padding: 0 25px;
+  height: 25px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+/*//////////
+list of songs
+///////////*/
+
+.song_list {
+  background-color: #FEFAC0;
+  border: 2px solid black;
+  padding: 1%;
+  margin-right: 10%;
+}
+.allNames {
+  padding-left: 15px;
+}
+h2 {
+  font-weight: normal;
+  color: #AA6C39;
+}
+.sp1 {
+  border-right: 2px solid black;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+.sp2 {
+  border-right: 2px solid black;
+  text-decoration: underline;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+.eachNames span {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
