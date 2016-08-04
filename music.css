@@ -51,7 +51,10 @@ nav li {
 /*//////////
 tools filter
 ///////////*/
-
+#blue-box {
+  float: left;
+  width: 30%;
+}
 .filters {
   background-color: #4DD7FA;
   border: 2px solid black;
@@ -125,3 +128,33 @@ h2 {
   padding-left: 10px;
   color: black;
 }
+
+li{
+    list-style: none;
+    display: inline;
+
+}
+#actions *{
+text-decoration: none;
+list-style:none;
+display: inline;
+}
+
+
+#yellow-box{
+    background-color: #FEFAC0;
+    border: 2px solid black;
+    min-height: 300px;
+    float: right;
+    border: 2px solid black;
+  /*padding-bottom: 20px;*/
+    padding-left: 20px;
+    width: 55%;
+    float: right;
+    height: ;
+}
+
+
+
+
+
