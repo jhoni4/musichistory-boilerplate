@@ -5,28 +5,13 @@ universal
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-/*//////////
-flexible containers
-///////////*/
-
-.container {
-  display: flex;
-}
-
-.flex_1 {
-  flex-grow: 1;
-}
-
-.flex_2 {
-  flex-grow: 4;
-}
 
 
 /*//////////
 nav-bar
 ///////////*/
 
-nav {
+.nav {
   background-color: #FFB4B0;
   border: 2px solid black;
   margin: 2% 10%;
@@ -53,14 +38,12 @@ tools filter
 ///////////*/
 #blue-box {
   float: left;
-  width: 30%;
-}
-.filters {
   background-color: #4DD7FA;
-  border: 2px solid black;
+  width: 20%;
+  height: 530px;
   padding: 1%;
+  border: 2px solid black;
   margin-left: 10%;
-  margin-right: 25px;
 }
 
 .checkbox_left {
@@ -72,37 +55,37 @@ tools filter
 }
 
 .slider input {
-  width: 100%;
+  width: 90%;
 }
 .genres {
   list-style-type: none;
   display: flex;
+  margin-top: 20%;
+}
+.artist_dropdown {
+  margin-top: 20%;
+}
+.slider {
+  margin-top: 10%;
 }
 
-.filter_button {
-  margin-top: 15px;
-  text-align: center;
+.button {
+  display: block;
+  height: 30px;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-top: 40px;
 }
+
 .bold {
   border: 2px solid black;
   border-radius: 5px;
 }
-.filter_button button {
-  padding: 0 25px;
-  height: 25px;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
+
 /*//////////
 list of songs
 ///////////*/
 
-.song_list {
-  background-color: #FEFAC0;
-  border: 2px solid black;
-  padding: 1%;
-  margin-right: 10%;
-}
 .allNames {
   padding-left: 15px;
 }
@@ -128,30 +111,36 @@ h2 {
   padding-left: 10px;
   color: black;
 }
-
 li{
     list-style: none;
     display: inline;
-
 }
-#actions *{
-text-decoration: none;
-list-style:none;
-display: inline;
-}
-
-
 #yellow-box{
     background-color: #FEFAC0;
     border: 2px solid black;
     min-height: 300px;
-    float: right;
+    margin-right: 10%;
+    padding-left: 1%;
     border: 2px solid black;
-  /*padding-bottom: 20px;*/
-    padding-left: 20px;
     width: 55%;
     float: right;
-    height: ;
+    height: 550px;
+}
+/* spa   */
+
+.visible {
+  display: block;
+}
+.insert {
+  font-size: 2em;
+  background-color: lightblue;
+  text-align: center;
+  border: 2px solid brown inset 30deg;
+  border: 2px solid black;
+}
+
+.hidden {
+  display: none;
 }
 
 

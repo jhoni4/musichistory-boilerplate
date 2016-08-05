@@ -5,18 +5,26 @@
     <link rel="stylesheet" type="text/css" href="music.css">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li class="sp1">View Music</li>
-        <li class="sp2"><a href="#">Add Music</a></li>
-        <li class="sp3"><a href="#">Profile</a></li>
-      </ul>
-    </nav>
-    <div  id="blue-box" class="container">
-      <div class="filters flex_1">
+    <div class="nav">
+      <nav>
+        <ul>
+          <li class="selected sp1"><a href="#" id="nav-home">Home</a></li>
+          <li class="sp2"><a href="#" id="nav-add">Add music </a></li>
+          <li class="sp3"><a href="#" id="nav-list">List music</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="textbox" class = "hidden insert">
+      Artist: <input type="text" name="artist" id="artist-input"><br/>
+      Album: <input type="text" name="album" id="album-input"><br/>
+      Song: <input type="text" name="song" id="song-input"><br/>
+      <button id="add-input">Add</button>
+    </div>
+
+      <div id="blue-box" class="filters">
         <div class="slider">
           <label for="time-slider">Song length:</label><br />
-          <input type="range" id="time-slider" class="bold" min="10" max="100">
+          <input type="range" id="time-slider"  class="bold" min="10" max="100">
         </div>
 
         <div class="artist_dropdown">
@@ -46,26 +54,25 @@
         <div class="genres">
           <span class="legend">Genre:</span>
           <div class="checkbox_left">
-            <li><input type="checkbox" name="genre" value="rock" />Rock</li>
-            <li><input type="checkbox" name="genre" value="classical" />Reggae</li>
+            <li><input type="checkbox" name="genre" value="rock" />Rock</li><br/>
+            <li><input type="checkbox" name="genre" value="classical" />Reggae</li><br/>
             <li><input type="checkbox" name="genre" value="pop" />Pop</li>
         </div>
         <div class="checkbox_right">
-            <li><input type="checkbox" name="genre" value="jazz" />Jazz</li>
-            <li><input type="checkbox" name="genre" value="blues" />Blues</li>
+            <li><input type="checkbox" name="genre" value="jazz" />Jazz</li><br/>
+            <li><input type="checkbox" name="genre" value="blues" />Blues</li><br/>
             <li><input type="checkbox" name="genre" value="hip_hop" />Hip hop</li>
           </div>
         </div>
 
         <div class="filter_button">
-          <button type="submit" class="bold">Filter</button>
+          <button type="submit" class="button bold">Filter</button>
         </div>
       </div>
+    <div id="yellow-box" class="song_list">
     </div>
-        <div id="yellow-box" class="song_list flex_2">
-      </div>
 
 
-  <script src="songs.js"></script>
+    <script src="songs.js"></script>
   </body>
 </html>

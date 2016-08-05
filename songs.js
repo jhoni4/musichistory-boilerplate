@@ -2,7 +2,7 @@ var songs = [];
 
 songs[songs.length] = "minimo > by Bob-marley on the album minto";
 songs[songs.length] = "why me > by Eminium on the album swear";
-songs[songs.length] = "whtasup > by shaggy on the album Eliminator";
+songs[songs.length] = "whtasup > by shaggy on the album Terminator";
 songs[songs.length] = "another day > by Cold play on the album again";
 songs[songs.length] = "see you > by Tupac on the album all eyez";
 songs[songs.length] = "cool me > by Fat joe on the album only me";
@@ -35,3 +35,50 @@ console.log("album",albumName);
   </div>`
 }
 console.log(finalArray);
+
+/*SPA*/
+// ------home------//
+
+var homeLink = document.getElementById("nav-home");
+var leftView = document.getElementById("blue-box");
+var addMusic = document.getElementById("textbox");
+
+homeLink.addEventListener("click", function() {
+  leftView.classList.add("visible");
+  leftView.classList.remove("hidden");
+  rightView.classList.remove("hidden");
+  rightView.classList.add("visible");
+  addMusic.classList.add("hidden");
+  addMusic.classList.remove("visible");
+
+});
+
+
+// ------Add------//
+
+var addLink = document.getElementById("nav-add");
+var rightView = document.getElementById("yellow-box");
+
+
+addLink.addEventListener("click", function() {
+  leftView.classList.remove("visible");
+  leftView.classList.add("hidden");
+  rightView.classList.remove("visible");
+  rightView.classList.add("hidden");
+  addMusic.classList.remove("hidden");
+  addMusic.classList.add("visible");
+});
+
+// ------List------//
+
+var listLink = document.getElementById("nav-list");
+var rightView = document.getElementById("yellow-box");
+
+listLink.addEventListener("click", function() {
+    leftView.classList.add("visible");
+    leftView.classList.remove("hidden");
+    rightView.classList.remove("hidden");
+    rightView.classList.add("visible");
+    addMusic.classList.add("hidden");
+    addMusic.classList.remove("visible");
+});
