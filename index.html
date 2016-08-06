@@ -3,21 +3,24 @@
   <head>
     <title># Music History</title>
     <link rel="stylesheet" type="text/css" href="music.css">
+    <link rel="stylesheet" type="text/css" href="src/lib/bootstrap/dist/css/bootstrap.min.css">
+
   </head>
   <body>
-    <div class="nav">
-      <nav>
+    <nav class="nav">
+      <!-- <nav> -->
         <ul>
           <li class="selected sp1"><a href="#" id="nav-home">Home</a></li>
-          <li class="sp2"><a href="#" id="nav-add">Add music </a></li>
-          <li class="sp3"><a href="#" id="nav-list">List music</a></li>
+          <li class="sp3"><a href="#" id="nav-add">Add music </a></li>
+          <!-- <li class="sp3"><a href="#" id="bob">List music</a></li> -->
         </ul>
-      </nav>
-    </div>
-    <div id="textbox" class = "hidden insert">
-      Artist: <input type="text" name="artist" id="artist-input"><br/>
-      Album: <input type="text" name="album" id="album-input"><br/>
-      Song: <input type="text" name="song" id="song-input"><br/>
+      <!-- </nav> -->
+    </nav>
+    <!-- text input field -->
+    <div id="textbox" class="hidden insert">
+      Artist: <input type="text" name="artist" placeholder="Enter Artist" id="artist-input"><br/>
+      Album: <input type="text" name="album" placeholder="Enter Album" id="album-input"><br/>
+      Song: <input type="text" name="song" placeholder="Enter Sond" id="song-input"><br/>
       <button id="add-input">Add</button>
     </div>
 
@@ -37,7 +40,7 @@
             <option value="JohnLegend">John Legend</option>
             <option value="Cold_play">Cold play</option>
           </select>
-        </div><br />
+        </div><br/>
 
         <div class="album_dropdown">
           <label for="album">Album:</label><br />
@@ -49,7 +52,7 @@
             <option value="ccc">ccc</option>
             <option value="bbb">bbb</option>
           </select>
-        </div><br />
+        </div><br/>
 
         <div class="genres">
           <span class="legend">Genre:</span>
@@ -69,10 +72,13 @@
           <button type="submit" class="button bold">Filter</button>
         </div>
       </div>
-    <div id="yellow-box" class="song_list">
+    <div id="container3" >
+      <div id="yellow-box" class="song_list">
+      </div>
     </div>
 
-
+<script type="text/javascript" src="src/lib/jquery/dist/jquery.min.js" ></script>
+    <script src="xhr.js"></script>
     <script src="songs.js"></script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+
+{
+  "songs": [
+
+    {
+      "title": "Buffalo soldiers",
+      "artist": "Bob Marley",
+      "album": "The wales and me"
+    },
+        {
+      "title": "Zip song",
+      "artist": "Cold play",
+      "album": "Talking is Hard"
+    },
+    {
+      "title": "say it",
+      "artist": "The Weekend",
+      "album": "cool of the City"
+    },
+    {
+      "title": "for Moon Song",
+      "artist": "John legend",
+      "album": "hello"
+    },
+    {
+      "title": "Moon light",
+      "artist": "Don Williams",
+      "album": "I love you"
+    }
+  ]
+}

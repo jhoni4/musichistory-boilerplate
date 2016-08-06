@@ -1,0 +1,21 @@
+{
+  "name": "musichistory-boilerplate",
+  "homepage": "https://github.com/jhoni4/musichistory-boilerplate",
+  "authors": [
+    "yonatan molla <jhoni42002@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
