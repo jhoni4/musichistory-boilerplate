@@ -122,7 +122,10 @@ li{
     list-style: none;
     display: inline;
 }
-#yellow-box{
+span {
+  float: right;
+}
+#container3 {
     background-color: #FEFAC0;
     border: 2px solid black;
     min-height: 300px;

@@ -1,72 +1,104 @@
 
-// var play = (function () {
     var allSongs = [];
-    // var songs = [];
-    // var songTitleArray = [];
-    // var songArtistArray = [];
-    // var songAlbumArray = [];
-    // var songString = "";
-    // var list = "";
+    var moreSongs = [];
 
-    // return {
-         function getSongInfo (callback) {
-            var xhr = new XMLHttpRequest()
-            xhr.open('GET', 'allSongs.json')
-            xhr.addEventListener("load", function(evt) {
-            allSongs = JSON.parse(this.responseText);
-          // alert(allSongs.songs[1].album);
+function getSongInfo (callback) {
+  var xhr = new XMLHttpRequest()
+  xhr.open('GET', 'allSongs.json')
+  xhr.addEventListener("load", function(evt) {
+  allSongs = JSON.parse(this.responseText);
 
-            callback(allSongs)
-             })
-            xhr.send()
-        }
-    // }
-// })()
-    getSongInfo(showSongs);
+  callback(allSongs)
+     })
+  xhr.send()
+}
+getSongInfo(showSongs);
 
-// var play = (function () {
-    function showSongs (allSongs) {
-      // var allSongs = {};(my bad i override this)
-      var output = "";
-      var output = document.getElementById("yellow-box");
-      var allSongsString = "";
-    // Looping though all array of songs
+function getMoreSongInfo (callback) {
+        var xhr = new XMLHttpRequest()
+        xhr.open('GET', 'moreSongs.json')
+        xhr.addEventListener("load", function(evt) {
+        moreSongs = JSON.parse(this.responseText);
 
-      for (var i = 0; i < allSongs.songs.length; i++) {
-         var each = allSongs.songs[i];
-          // alert(allSongs.songs[i]);
-         var songName = each.title;
-         var artistName = each.artist;
-         var albumName = each.album;
-        allSongsString +=
-         `<div class="song">
-            <h2 class="name">${songName}</h2>
-            <ul>
-              <li class="artist">${artistName}</li>
-              <li>|</li>
-              <li class="album">${albumName}</li>
-              <li>|</li>
-              <li class="genre">Genre</li>
-            <li><button type="button" id="deleteButton" name = "delete">Delete</button></li>
-            </ul>
-          </div>`;
-      }
-      // console.log("hi")
-
-       var deleteButtons = document.getElementById("yellow-box");
-      // var deleteButtons = document.querySelector(".song");
-        for (var i = 0; i < 1; i++) {
-      deleteButtons.addEventListener("click", function (evt) {
-        // console.log("you clicked me");
-         evt.target.parentElement.remove();
-      } );
-        }
-
-      output.innerHTML = allSongsString;
+        callback(moreSongs)
+         })
+        xhr.send()
     }
+    getMoreSongInfo(showMoreSongs);
 
+function showSongs (allSongs) {
+  var output = "";
+  var output = document.getElementById("yellow-box");
+  var allSongsString = "";
+// Looping though all array of songs
 
+  for (var i = 0; i < allSongs.songs.length; i++) {
+     var each = allSongs.songs[i];
+      // alert(allSongs.songs[i]);
+     var songName = each.title;
+     var artistName = each.artist;
+     var albumName = each.album;
+    allSongsString +=
+     `<div class="song">
+        <h2 class="name">${songName}</h2>
+        <ul>
+          <li class="artist">${artistName}</li>
+          <li>|</li>
+          <li class="album">${albumName}</li>
+          <li>|</li>
+          <li class="genre">Genre</li>
+        </ul>
+        <span><button type="button" class="deleteButtoN" name="delete">Delete</button></span>
+      </div>`;
+  }
+   output.innerHTML = allSongsString;
 
+   var deleteButtons = document.getElementsByClassName("deleteButtoN");
+   for (var j = 0; j < deleteButtons.length; j++) {
+   deleteButtons[j].addEventListener("click", function (evt) {
+    console.log("delete button clicked")
+     evt.target.parentElement.parentElement.remove();
+  });
+   }
 
+}
 
+function showMoreSongs (moreSongs) {
+    // var output1 = "";
+    var output1 = document.getElementById("more-box");
+    var moreButton = document.getElementById("moreButton");
+    var moreSongsString = "";
+
+  // Looping though all array of songs
+  moreButton.addEventListener("click", function (evt){
+    console.log("more button clicked")
+    for (var j = 0; j < moreSongs.songs.length; j++) {
+       var each = moreSongs.songs[j];
+       var songName = each.title;
+       var artistName = each.artist;
+       var albumName = each.album;
+      moreSongsString +=
+      `<div class="song">
+        <h2 class="name">${songName}</h2>
+        <ul>
+          <li class="artist">${artistName}</li>
+          <li>|</li>
+          <li class="album">${albumName}</li>
+          <li>|</li>
+          <li class="genre">Genre</li>
+        </ul>
+        <span><button type="button" class="deleteButtoN" name="delete">Delete</button></span>
+      </div>`;
+  }
+   output1.innerHTML = moreSongsString;
+
+   var deleteButtons = document.getElementsByClassName("deleteButtoN");
+   for (var j = 0; j < deleteButtons.length; j++) {
+   deleteButtons[j].addEventListener("click", function (evt) {
+    console.log("delete button clicked")
+     evt.target.parentElement.parentElement.remove();
+  });
+   }
+ });
+}
 
