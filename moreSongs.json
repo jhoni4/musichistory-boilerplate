@@ -3,14 +3,16 @@
   "songs": [
 
     {
-      "title": "for Moon Song",
+      "title": "All of me",
       "artist": "John legend",
-      "album": "hello"
+      "album": "Love In The Future",
+      "genre": "R&B"
     },
     {
-      "title": "Moon light",
+      "title": "It Must Be Love",
       "artist": "Don Williams",
-      "album": "I love you"
+      "album": "Expressions",
+      "genre": "Country"
     }
   ]
 }

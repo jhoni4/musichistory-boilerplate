@@ -5,17 +5,20 @@
     {
       "title": "Buffalo soldiers",
       "artist": "Bob Marley",
-      "album": "The wales and me"
+      "album": "Confrontation",
+      "genre": "Reggae"
     },
         {
-      "title": "Zip song",
+      "title": "Paradise",
       "artist": "Cold play",
-      "album": "Talking is Hard"
+      "album": "Mylo xyloto",
+      "genre": "Pop"
     },
     {
-      "title": "say it",
+      "title": "Earned It",
       "artist": "The Weekend",
-      "album": "cool of the City"
+      "album": "Fifty Shades Of Grey",
+      "genre": "Hip hop"
     }
   ]
 }

@@ -126,16 +126,17 @@ span {
   float: right;
 }
 #container3 {
-    background-color: #FEFAC0;
-    border: 2px solid black;
-    min-height: 300px;
-    margin-right: 10%;
-    padding-left: 1%;
-    margin-top: 1%;
-    border: 2px solid black;
-    width: 55%;
-    float: right;
-    height: 550px;
+  background-color: #FEFAC0;
+  border: 2px solid black;
+  min-height: 300px;
+  margin-right: 10%;
+  padding-left: 1%;
+  margin-top: 1%;
+  border: 2px solid black;
+  width: 55%;
+  float: right;
+  height: 550px;
+  overflow: auto;
 
 }
 /* spa   */
