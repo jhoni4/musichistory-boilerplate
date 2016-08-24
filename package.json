@@ -1,0 +1,22 @@
+{
+  "name": "musichistory-boilerplate",
+  "version": "1.0.0",
+  "description": "Instructions",
+  "main": "songs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhoni4/musichistory-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhoni4/musichistory-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jhoni4/musichistory-boilerplate#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

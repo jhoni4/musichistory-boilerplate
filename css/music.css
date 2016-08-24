@@ -1,0 +1,168 @@
+/*//////////
+universal
+///////////*/
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/*//////////
+nav-bar
+///////////*/
+
+.nav {
+  background-color: #FFB4B0;
+  border: 2px solid black;
+  margin: 2% 10%;
+  height: 100px;
+}
+
+nav ul {
+  padding-left: 20px;
+  padding-top: 2%;
+}
+
+nav li {
+  display: inline-block;
+  border-right: 2px solid black;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+  font-size: 1.5em;
+}
+.sp3 {
+  text-decoration: underline;
+  border: none;
+}
+
+/*//////////
+tools filter
+///////////*/
+#blue-box {
+  float: left;
+  background-color: #4DD7FA;
+  width: 23%;
+  height: 530px;
+  padding: 1%;
+  border: 2px solid black;
+  margin-left: 10%;
+  margin-right: 1%;
+  margin-top: 1%;
+  font-size: 1.5em;
+}
+
+.checkbox_left {
+  float: left;
+}
+
+.checkbox_right {
+  float: right;
+}
+
+.slider input {
+  width: 90%;
+}
+.genres {
+  list-style-type: none;
+  display: flex;
+  margin-top: 10%;
+}
+.artist_dropdown {
+  margin-top: 10%;
+}
+.slider {
+  margin-top: 10%;
+}
+
+.button {
+  display: block;
+  height: 30px;
+  width: 150px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-left: 25%;
+}
+
+.bold {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+/*//////////
+list of songs
+///////////*/
+
+.allNames {
+  padding-left: 15px;
+}
+h2 {
+  font-weight: normal;
+  color: #B8860B;
+}
+.sp1 {
+  border-right: 2px solid black;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+.sp2 {
+  border-right: 2px solid black;
+  text-decoration: underline;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+.eachNames span {
+  padding-right: 10px;
+  padding-left: 10px;
+  color: black;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+span {
+  float: right;
+}
+#container3 {
+  background-color: #FEFAC0;
+  border: 2px solid black;
+  min-height: 300px;
+  margin-right: 10%;
+  padding-left: 1%;
+  margin-top: 1%;
+  border: 2px solid black;
+  width: 55%;
+  float: right;
+  height: 550px;
+  overflow: auto;
+
+}
+/* spa   */
+
+.visible {
+  display: block;
+}
+.insert {
+  font-size: 2em;
+  background-color: lightblue;
+  text-align: center;
+  border: 2px solid brown inset 30deg;
+  border: 2px solid black;
+  margin-top: 1%;
+  margin-left: 25%;
+  width: 50%;
+}
+.insert input {
+  border: 2px solid brown;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
